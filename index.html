@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech-Service - Soluções Tecnológicas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /*background-color: #FF7315;*/
+      background: linear-gradient(to bottom, #ff7300, #ff7315, #d16d10ea, #462002f3);
+    }
+    
+    header {
+      background: linear-gradient(to bottom, #000000, #301f0a, #000000);
+      color: #fff;
+      text-align: center;
+      transition: background 0.5s;
+      padding: 5.4px;
+    }
+    
+    h1 {
+      margin-top: 0;
+    }
+
+    .texto{
+      font-family: 'EB Garamond', serif;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #F4F4F4;
+      box-shadow: 0px 0px 5px rgb(0, 0, 0);
+      border-radius: 1.5%;
+      text-align: center;
+    }
+    
+    p {
+      line-height: 1.5;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: #555;
+    }
+    
+    .logo-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    
+    .logo {
+      display: inline-block;
+      max-width: 40%;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .logo:hover {
+      transform: scale(1.1);
+    }
+    
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .feature {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      border-radius: 4px;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .feature i {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+    
+    .feature:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.678);
+      transform: translateY(-5px);
+    }
+    
+    .contact-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .contact-section p {
+      margin-bottom: 20px;
+    }
+    
+    .contact-section .cta-button {
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .interactive-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .interactive-image {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .interactive-image:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: linear-gradient(to bottom, #111, #272626);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      transition: background 0.5s;
+    }
+
+    footer:hover {
+      background: linear-gradient(to bottom, #1d1c1c, #141414);
+    }
+
+    footer p {
+      margin: 0;
+    }
+  
+    
+    /* Estilos para dispositivos móveis */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+      .button-container {
+        flex-wrap: wrap;
+      }
+
+      .cta-button {
+        margin: 5px;
+      }
+    
+
+      .logo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      
+      .interactive-images {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="#">
+        <img src="img/logo.png" alt="Logo Tech-Service" class="logo">
+      </a>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="texto">
+    <h1>Descubra um mundo de possibilidades com nosso serviço excepcional</h1>
+      <h2>Onde o sucesso é apenas o começo!</h2>  
+    </div>
+    <div class="interactive-images">
+      <img src="img/pessoas.jpg" alt="Interactive Image 1" class="interactive-image">
+      <img src="img/mulher.jpg" alt="Interactive Image 2" class="interactive-image">
+      <img src="img/homen.jpg" alt="Interactive Image 3" class="interactive-image">
+    </div>
+    
+    <h2>Sobre nós</h2>
+    <p>A Tech-Service é uma empresa especializada em fornecer soluções tecnológicas para seus clientes. Nossos serviços abrangem desde consultoria e desenvolvimento de software até suporte técnico e manutenção de equipamentos.</p>
+    <P>Localizado em Mafra SC</P>
+    <h2>Nossos serviços</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <i class="fa fa-laptop"></i>
+        <h3>Desenvolvimento de Software</h3>
+        <p>Desenvolvemos software personalizado para atender às necessidades dos nossos clientes.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-cogs"></i>
+        <h3>Consultoria em TI</h3>
+        <p>Oferecemos consultoria especializada em tecnologia da informação para auxiliar na tomada de decisões estratégicas.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-wrench"></i>
+        <h3>Suporte Técnico</h3>
+        <p>Oferecemos suporte técnico especializado para resolver problemas e manter seus sistemas funcionando adequadamente.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-mobile"></i>
+        <h3>Desenvolvimento Mobile</h3>
+        <p>Criamos aplicativos móveis nativos para Android e iOS, proporcionando uma experiência incrível aos usuários.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-database"></i>
+        <h3>Banco de Dados</h3>
+        <p>Projetamos e implementamos bancos de dados eficientes e seguros para armazenar e gerenciar seus dados.</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-cloud"></i>
+        <h3>Soluções em Nuvem</h3>
+        <p>Oferecemos soluções em nuvem para ajudar sua empresa a otimizar recursos e escalabilidade.</p>
+      </div>
+    </div>
+    
+    <div class="contact-section">
+      <h2>Entre em contato</h2>
+      <p>Se você precisa de ajuda com algum projeto ou tem alguma dúvida, entre em contato conosco.</p>
+      <div class="button-container">
+        <a href="mailto:techservicectt@gmail.com" class="cta-button">E-mail</a>
+        <a href="https://wa.me/5547997025521" class="cta-button">WhatsApp</a>
+        <a href="https://instagram.com/instatechservice?igshid=ZDc4ODBmNjlmNQ==" class="cta-button">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Tech-Service. Todos os direitos reservados.</p>
+    <p>Lucas Fagundes e Jonathan Felipe.</p>
+  </footer>
+  
+  <!-- Adicione a biblioteca Font Awesome -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
